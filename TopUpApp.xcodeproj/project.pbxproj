@@ -13,6 +13,11 @@
 		FA7083F22DD6388E007B4840 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FA7083F12DD6388E007B4840 /* Base */; };
 		FA7083F42DD6388F007B4840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7083F32DD6388F007B4840 /* Assets.xcassets */; };
 		FA7083F72DD6388F007B4840 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FA7083F62DD6388F007B4840 /* Base */; };
+		FA7084082DD63DD0007B4840 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7084072DD63DD0007B4840 /* UIView+Extension.swift */; };
+		FA70840A2DD63E64007B4840 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7084092DD63E64007B4840 /* UIColor+Extension.swift */; };
+		FA7084112DD649BF007B4840 /* PulsaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7084102DD649BF007B4840 /* PulsaModel.swift */; };
+		FA7084132DD64A18007B4840 /* VoucherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7084122DD64A18007B4840 /* VoucherModel.swift */; };
+		FA7084152DD64A2D007B4840 /* StatusPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7084142DD64A2D007B4840 /* StatusPageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,14 @@
 		FA7083F32DD6388F007B4840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA7083F62DD6388F007B4840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA7083F82DD6388F007B4840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7084072DD63DD0007B4840 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		FA7084092DD63E64007B4840 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		FA70840C2DD63FE3007B4840 /* pulsa.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pulsa.json; sourceTree = "<group>"; };
+		FA70840E2DD64056007B4840 /* voucher.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = voucher.json; sourceTree = "<group>"; };
+		FA70840F2DD640B1007B4840 /* transaction_status.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = transaction_status.json; sourceTree = "<group>"; };
+		FA7084102DD649BF007B4840 /* PulsaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsaModel.swift; sourceTree = "<group>"; };
+		FA7084122DD64A18007B4840 /* VoucherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherModel.swift; sourceTree = "<group>"; };
+		FA7084142DD64A2D007B4840 /* StatusPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusPageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +72,100 @@
 				FA7083EA2DD6388E007B4840 /* AppDelegate.swift */,
 				FA7083EC2DD6388E007B4840 /* SceneDelegate.swift */,
 				FA7083EE2DD6388E007B4840 /* ViewController.swift */,
+				FA7084062DD63DB2007B4840 /* Extensions */,
+				FA7084052DD63DAD007B4840 /* Resources */,
+				FA7084032DD63BFB007B4840 /* Voucher */,
+				FA7084042DD63C03007B4840 /* Status */,
+				FA7084022DD63BE8007B4840 /* Transaction */,
+				FA7084012DD63BE2007B4840 /* Home */,
 				FA7083F02DD6388E007B4840 /* Main.storyboard */,
 				FA7083F32DD6388F007B4840 /* Assets.xcassets */,
 				FA7083F52DD6388F007B4840 /* LaunchScreen.storyboard */,
 				FA7083F82DD6388F007B4840 /* Info.plist */,
 			);
 			path = TopUpApp;
+			sourceTree = "<group>";
+		};
+		FA7083FE2DD63B6D007B4840 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA7084102DD649BF007B4840 /* PulsaModel.swift */,
+				FA7084122DD64A18007B4840 /* VoucherModel.swift */,
+				FA7084142DD64A2D007B4840 /* StatusPageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA7083FF2DD63B79007B4840 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA7084002DD63B88007B4840 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA7084012DD63BE2007B4840 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FA7084002DD63B88007B4840 /* Controllers */,
+				FA7083FE2DD63B6D007B4840 /* Models */,
+				FA7083FF2DD63B79007B4840 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FA7084022DD63BE8007B4840 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		FA7084032DD63BFB007B4840 /* Voucher */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Voucher;
+			sourceTree = "<group>";
+		};
+		FA7084042DD63C03007B4840 /* Status */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Status;
+			sourceTree = "<group>";
+		};
+		FA7084052DD63DAD007B4840 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA70840B2DD63FCA007B4840 /* JSON */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA7084062DD63DB2007B4840 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA7084072DD63DD0007B4840 /* UIView+Extension.swift */,
+				FA7084092DD63E64007B4840 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA70840B2DD63FCA007B4840 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				FA70840C2DD63FE3007B4840 /* pulsa.json */,
+				FA70840E2DD64056007B4840 /* voucher.json */,
+				FA70840F2DD640B1007B4840 /* transaction_status.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +241,12 @@
 			files = (
 				FA7083EF2DD6388E007B4840 /* ViewController.swift in Sources */,
 				FA7083EB2DD6388E007B4840 /* AppDelegate.swift in Sources */,
+				FA7084152DD64A2D007B4840 /* StatusPageModel.swift in Sources */,
+				FA7084082DD63DD0007B4840 /* UIView+Extension.swift in Sources */,
+				FA7084112DD649BF007B4840 /* PulsaModel.swift in Sources */,
 				FA7083ED2DD6388E007B4840 /* SceneDelegate.swift in Sources */,
+				FA70840A2DD63E64007B4840 /* UIColor+Extension.swift in Sources */,
+				FA7084132DD64A18007B4840 /* VoucherModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
