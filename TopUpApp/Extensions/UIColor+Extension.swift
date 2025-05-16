@@ -13,8 +13,6 @@ extension UIColor {
         return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: 1)
     }
     
-    static let white = UIColor(named: "White")
-    static let black = UIColor(named: "Black")
     static let blue = UIColor(named: "Blue")
     static let softBlue = UIColor(named: "SoftBlue")
     static let orange = UIColor(named: "Orange")
